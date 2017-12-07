@@ -3,6 +3,6 @@
     <item android:drawable="@color/colorPrimary" />
     <item>
         <bitmap android:src="@drawable/user_logo"
-            android:gravity="center" />
+            android:gravity="center"/>
     </item>
 </layer-list>
