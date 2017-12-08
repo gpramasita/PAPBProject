@@ -12,7 +12,8 @@
         android:orientation="vertical"
         android:paddingLeft="24dp"
         android:paddingRight="24dp"
-        android:paddingTop="20dp">
+        android:paddingTop="20dp"
+        android:layout_marginTop="5dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -25,9 +26,9 @@
             <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:paddingBottom="10dp"
+                android:paddingBottom="20dp"
                 android:paddingTop="25dp"
-                android:text="REGISTER AS MEMBER"
+                android:text="CREATE YOUR ACCOUNT"
                 android:textAlignment="center"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="16dp" />
@@ -35,8 +36,7 @@
             <EditText
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"
                 android:backgroundTint="@color/colorPrimaryDark"
                 android:hint="Email Address"
                 android:inputType="textEmailAddress"
@@ -48,8 +48,7 @@
             <EditText
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"
                 android:backgroundTint="@color/colorPrimaryDark"
                 android:hint="New Password"
                 android:inputType="textPassword"
@@ -61,8 +60,7 @@
             <EditText
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="5dp"
+                android:layout_marginBottom="25dp"
                 android:backgroundTint="@color/colorPrimaryDark"
                 android:hint="Confirm New Password"
                 android:inputType="textPassword"
@@ -70,15 +68,6 @@
                 android:textColor="@color/colorAccent7"
                 android:textColorHint="@color/colorPrimaryDark"
                 android:textSize="14dp" />
-
-            <Button
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="right"
-                android:layout_marginBottom="10dp"
-                android:text="Next"
-                android:textColor="@color/colorAccent"/>
-
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

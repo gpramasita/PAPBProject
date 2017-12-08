@@ -4,9 +4,9 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-//import android.support.v7.widget.Toolbar;
-//import android.view.Menu;
 import android.widget.TextView;
+
+
 
 /**
  * Created by gpramasita on 12/7/17.
@@ -17,17 +17,22 @@ public class SignupActivity extends AppCompatActivity {
     ViewPager tViewPager;
     TabLayout tTablayout;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
 
+
+
+
         //Membuat halaman tab
         tTablayout = (TabLayout) findViewById(R.id.tabs);
-        tTablayout.addTab(tTablayout.newTab().setText("Account Details"));
-        tTablayout.addTab(tTablayout.newTab().setText("Personal Details"));
-        tTablayout.addTab(tTablayout.newTab().setText("Social Account Details"));
-        tTablayout.addTab(tTablayout.newTab().setText("Apply Global Leader"));
+        tTablayout.setupWithViewPager(tViewPager);
+        tTablayout.addTab(tTablayout.newTab().setIcon(R.drawable.acc_logo));
+        tTablayout.addTab(tTablayout.newTab().setIcon(R.drawable.det_logo));
+        tTablayout.addTab(tTablayout.newTab().setIcon(R.drawable.soc_logo));
+        tTablayout.addTab(tTablayout.newTab().setIcon(R.drawable.lead_logo));
         tTablayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
         //Menampilkan isi dari tab
@@ -44,7 +49,6 @@ public class SignupActivity extends AppCompatActivity {
             public void onPageSelected(int position) {
                 tTablayout.setScrollPosition(position, 0, true);
                 tTablayout.setSelected(true);
-
             }
 
             @Override
@@ -53,12 +57,11 @@ public class SignupActivity extends AppCompatActivity {
             }
         });
 
-        tTablayout.setupWithViewPager(tViewPager);
+
         tTablayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
                 tViewPager.setCurrentItem(tab.getPosition());
-
             }
 
             @Override
@@ -74,8 +77,9 @@ public class SignupActivity extends AppCompatActivity {
 
         //Menampilkan text pada form
         Parview = (TextView) findViewById(R.id.Welcometxt);
-        Parview.setText("Congratulation for you!\nLet's take action and leadership opportunities\nHere is the registration form of our Global Leader program");
+        Parview.setText("Congratulation for you!\nLet's take action and leadership opportunities with AIESEC Universitas Brawijaya\nHere is the registration form of our Global Leader program");
     }
+
 
 
 }

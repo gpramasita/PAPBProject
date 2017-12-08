@@ -1,9 +1,9 @@
 package com.example.gpramasita.papbproject;
 
-import android.graphics.pdf.PdfDocument;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.app.Fragment;
+import android.widget.Button;
 
 /**
  * Created by gpramasita on 12/7/17.
@@ -12,10 +12,12 @@ import android.support.v4.app.Fragment;
 public class PageActivity extends FragmentPagerAdapter {
 
     int tabCount;
+    Button btnA, btnD, btnS, btnL;
 
     public PageActivity (FragmentManager manage, int tabCount){
         super(manage);
         this.tabCount = tabCount;
+
     }
 
     @Override
