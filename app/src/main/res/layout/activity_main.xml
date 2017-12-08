@@ -13,8 +13,7 @@
         android:paddingLeft="24dp"
         android:paddingRight="24dp">
 
-
-        <ImageView android:src="@drawable/user_logo"
+        <ImageView android:src="@drawable/a_logo"
             android:layout_width="wrap_content"
             android:layout_height="95dp"
             android:layout_gravity="center_horizontal"

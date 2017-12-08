@@ -4,10 +4,94 @@
     android:layout_height="fill_parent"
     android:orientation="vertical">
 
-    <TextView
+    <LinearLayout
+        android:id="@+id/TheAccount"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Personal Details"
-        android:textSize="14dp"/>
+        android:layout_below="@id/Theheader"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="20dp">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent8"
+            android:orientation="vertical"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingTop="25dp"
+                android:text="FILL IN YOUR PERSONAL DETAILS"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16dp" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:hint="Full Name"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColor="@color/colorAccent7"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textSize="14dp" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:hint="Date of Birth"
+                android:inputType="date"
+                android:singleLine="true"
+                android:textColor="@color/colorAccent7"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textSize="14dp" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:hint="Home Address"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColor="@color/colorAccent7"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textSize="14dp" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:hint="Mobile Phone Number"
+                android:inputType="phone"
+                android:singleLine="true"
+                android:textColor="@color/colorAccent7"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textSize="14dp" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginBottom="10dp"
+                android:text="Next"
+                android:textColor="@color/colorAccent"/>
+
+        </LinearLayout>
+    </LinearLayout>
 </LinearLayout>

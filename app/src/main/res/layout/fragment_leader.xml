@@ -1,13 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical">
 
-    <TextView
+    <LinearLayout
+        android:id="@+id/TheAccount"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Apply Global Leader"
-        android:textSize="14dp"/>
+        android:layout_below="@id/Theheader"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="20dp">
 
-</LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent8"
+            android:orientation="vertical"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingTop="25dp"
+                android:text="APPLY FOR GLOBAL LEADER"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16dp" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:hint="From which faculties are you?"
+                android:inputType="phone"
+                android:singleLine="true"
+                android:textColor="@color/colorAccent7"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textSize="14dp" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:hint="From which major are you?"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColor="@color/colorAccent7"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textSize="14dp" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:hint="In which year of study are you?"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColor="@color/colorAccent7"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textSize="14dp" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:hint="In which ... department are you interested in?"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColor="@color/colorAccent7"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textSize="14dp" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:hint="Why do you want to join as ... member?"
+                android:inputType="textMultiLine"
+                android:singleLine="true"
+                android:maxLength="150"
+                android:textColor="@color/colorAccent7"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textSize="14dp" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginBottom="10dp"
+                android:text="Submit"
+                android:textColor="@color/colorAccent"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

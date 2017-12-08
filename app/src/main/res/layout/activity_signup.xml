@@ -6,6 +6,34 @@
     android:background="@color/colorPrimary"
     android:fitsSystemWindows="true">
 
+    <LinearLayout
+        android:id="@+id/Theheader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/a_logo" />
+
+        <TextView
+            android:id="@+id/Welcometxt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="12dp" />
+    </LinearLayout>
+
     <android.support.design.widget.TabLayout
         android:id="@+id/tabs"
         android:layout_width="match_parent"
@@ -21,151 +49,5 @@
 
     </android.support.v4.view.ViewPager>
 
-    <!--<LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">-->
 
-     <!--   <LinearLayout
-            android:id="@+id/Theheader"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:paddingLeft="24dp"
-            android:paddingRight="24dp"
-            android:paddingTop="20dp">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="60dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="46dp"
-                android:layout_marginTop="15dp"
-                android:src="@drawable/user_logo" />
-
-            <TextView
-                android:id="@+id/Welcometxt"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:paddingBottom="20dp"
-                android:text=""
-                android:textAlignment="center"
-                android:textColor="@color/colorAccent"
-                android:textSize="12dp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/TheAccount"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/Theheader"
-            android:orientation="vertical"
-            android:paddingLeft="24dp"
-            android:paddingRight="24dp"
-            android:paddingTop="30dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/colorAccent8"
-                android:orientation="vertical"
-                android:paddingLeft="40dp"
-                android:paddingRight="40dp">
-
-                <TextView
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingBottom="20dp"
-                    android:paddingTop="25dp"
-                    android:text="REGISTER AS MEMBER"
-                    android:textAlignment="center"
-                    android:textColor="@color/colorPrimaryDark"
-                    android:textSize="16dp" />
-
-                <EditText
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="20dp"
-                    android:layout_marginTop="5dp"
-                    android:backgroundTint="@color/colorPrimaryDark"
-                    android:hint="Email Address"
-                    android:inputType="textPassword"
-                    android:singleLine="true"
-                    android:textColorHint="@color/colorPrimaryDark"
-                    android:textSize="14dp" />
-
-                <EditText
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="20dp"
-                    android:layout_marginTop="5dp"
-                    android:backgroundTint="@color/colorPrimaryDark"
-                    android:hint="New Password"
-                    android:inputType="textPassword"
-                    android:singleLine="true"
-                    android:textColorHint="@color/colorPrimaryDark"
-                    android:textSize="14dp" />
-
-                <EditText
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginTop="5dp"
-                    android:backgroundTint="@color/colorPrimaryDark"
-                    android:hint="Your New Password"
-                    android:inputType="textPassword"
-                    android:singleLine="true"
-                    android:textColorHint="@color/colorPrimaryDark"
-                    android:textSize="14dp" />
-
-                <Button
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="right"
-                    android:layout_marginBottom="20dp"
-                    android:text="Next"
-                    android:textColor="@color/colorAccent"/>
-
-            </LinearLayout>
-        </LinearLayout>-->
-
-        <!--        <LinearLayout
-                    android:id="@+id/TheDetails"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/TheAccount"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Personal Details" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/TheSocial"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/TheDetails"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Social Accounts" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/TheLeader"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/TheSocial"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Global Leader Products" />
-                </LinearLayout>-->
-   <!-- </LinearLayout>-->
 </LinearLayout>

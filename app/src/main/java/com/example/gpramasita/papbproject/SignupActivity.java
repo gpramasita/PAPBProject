@@ -6,14 +6,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 //import android.support.v7.widget.Toolbar;
 //import android.view.Menu;
-//import android.widget.TextView;
+import android.widget.TextView;
 
 /**
  * Created by gpramasita on 12/7/17.
  */
 
 public class SignupActivity extends AppCompatActivity {
-    //TextView Parview;
+    TextView Parview;
     ViewPager tViewPager;
     TabLayout tTablayout;
 
@@ -73,8 +73,8 @@ public class SignupActivity extends AppCompatActivity {
         });
 
         //Menampilkan text pada form
-        //Parview = (TextView) findViewById(R.id.Welcometxt);
-        //Parview.setText("Congratulation ...!\n...\nHere is the registration form of our ... program");
+        Parview = (TextView) findViewById(R.id.Welcometxt);
+        Parview.setText("Congratulation for you!\nLet's take action and leadership opportunities\nHere is the registration form of our Global Leader program");
     }
 
 
