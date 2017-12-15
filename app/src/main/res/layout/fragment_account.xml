@@ -34,6 +34,7 @@
                 android:textSize="16dp" />
 
             <EditText
+                android:id="@+id/In_mail"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
@@ -46,6 +47,7 @@
                 android:textSize="14dp" />
 
             <EditText
+                android:id="@+id/In_pswd"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
@@ -58,6 +60,7 @@
                 android:textSize="14dp" />
 
             <EditText
+                android:id="@+id/In_pswd2"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="25dp"

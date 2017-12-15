@@ -14,6 +14,7 @@ public class PageActivity extends FragmentPagerAdapter {
     int tabCount;
     Button btnA, btnD, btnS, btnL;
 
+
     public PageActivity (FragmentManager manage, int tabCount){
         super(manage);
         this.tabCount = tabCount;

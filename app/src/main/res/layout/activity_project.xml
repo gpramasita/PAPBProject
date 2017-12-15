@@ -12,68 +12,72 @@
         android:paddingTop="46dp"
         android:paddingLeft="24dp"
         android:paddingRight="24dp">
-
-        <ImageView android:src="@drawable/a_logo"
-            android:layout_width="wrap_content"
-            android:layout_height="95dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="30dp"
-            android:layout_marginBottom="46dp"/>
-
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Email"
+            android:text="Entrevolution Project"
             android:textSize="12dp"
             android:textColor="#FFFFFF"/>
 
-        <EditText
-            android:id="@+id/edit_mail"
+        <RadioButton
+            android:id="@+id/rApply1"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
             android:layout_marginBottom="20dp"
-            android:singleLine="true"
-            android:hint="Email"
+            android:layout_marginTop="5dp"
             android:backgroundTint="@color/colorAccent"
-            android:inputType="textEmailAddress"/>
+            android:checked="false"
+            android:inputType="text"
+            android:onClick="onSubmitClick"
+            android:singleLine="true"
+            android:text="Apply" />
 
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Your Password"
+            android:text="Global Guardian"
             android:textSize="12dp"
             android:textColor="#F3F4F7"/>
 
-        <EditText
-            android:id="@+id/edit_pswd"
+        <RadioButton
+            android:id="@+id/rApply2"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="20dp"
             android:singleLine="true"
-            android:hint="Password"
+            android:onClick="onSubmitClick"
+            android:text="Apply"
             android:backgroundTint="@color/colorAccent"
-            android:inputType="textPassword"/>
+            android:inputType="text"/>
 
-        <Button
-            android:id="@+id/signinBtn"
+        <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:text="Youth Speak"
+            android:textSize="12dp"
+            android:textColor="#F3F4F7"/>
+
+        <RadioButton
+            android:id="@+id/rApply3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
             android:layout_marginBottom="20dp"
-            android:layout_marginTop="20dp"
-            android:background="#0257FE"
-            android:onClick="onStatusClick"
-            android:text="Login"
-            android:textColor="#F3F4F7" />
+            android:singleLine="true"
+            android:text="Apply"
+            android:onClick="onSubmitClick"
+            android:backgroundTint="@color/colorAccent"
+            android:inputType="text"/>
 
-        <TextView android:id="@+id/signup"
+        <TextView
+            android:id="@+id/tHasil"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Member baru? Silahkan Sign Up"
-            android:textSize="14dp"
-            android:textColor="@color/colorAccent"
-            android:gravity="center"/>
-    </LinearLayout>
+            android:text=""
+            android:textSize="12dp"
+            android:textColor="#F3F4F7"/>
+
+        </LinearLayout>
 
 </ScrollView>

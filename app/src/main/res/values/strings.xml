@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">PAPBProject</string>
+
+    <string-array name="CountryOpt">
+        <item>Thailand</item>
+        <item>Malaysia</item>
+        <item>Phillipines</item>
+        <item>Korea</item>
+        <item>Romania</item>
+    </string-array>
+
+    <string-array name="SeasonOpt">
+        <item>Winter</item>
+        <item>Spring</item>
+        <item>Summer</item>
+        <item>Autumn</item>
+    </string-array>
+
+    <string name="hintName">Hasil Username</string>
+    <string name="hintCountry">Hasil Pekerjaan</string>
+    <string name="hintSeason">Hasil Jenis Kelamin</string>
+    <string name="hintEmail1">Hasil Email</string>
 </resources>

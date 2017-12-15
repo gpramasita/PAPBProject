@@ -1,10 +1,13 @@
 package com.example.gpramasita.papbproject;
 
+import android.content.Intent;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.EditText;
 import android.widget.TextView;
+import android.view.View;
 
 
 
@@ -16,15 +19,12 @@ public class SignupActivity extends AppCompatActivity {
     TextView Parview;
     ViewPager tViewPager;
     TabLayout tTablayout;
-
+    EditText username, password;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
-
-
-
 
         //Membuat halaman tab
         tTablayout = (TabLayout) findViewById(R.id.tabs);
@@ -78,6 +78,14 @@ public class SignupActivity extends AppCompatActivity {
         //Menampilkan text pada form
         Parview = (TextView) findViewById(R.id.Welcometxt);
         Parview.setText("Congratulation for you!\nLet's take action and leadership opportunities with AIESEC Universitas Brawijaya\nHere is the registration form of our Global Leader program");
+    }
+
+    public void onSubmitClick (View v) {
+        if (v.getId() == R.id.btnlead) {
+            Intent intent = new Intent(SignupActivity.this, NotificationActvity.class);
+            startActivity(intent);
+
+        }
     }
 
 
